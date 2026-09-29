@@ -8,9 +8,6 @@ const mobileNav = document.querySelector(".mobile-nav");
 const themeToggle = document.querySelector(".theme-toggle");
 const themeIcon = document.querySelector(".theme-icon");
 
-const cursor = document.querySelector(".cursor");
-const cursorDot = document.querySelector(".cursor-dot");
-
 const magneticItems = document.querySelectorAll(".magnetic");
 
 const githubRepos = document.querySelector("#github-repos");
@@ -94,30 +91,6 @@ themeToggle.addEventListener("click", () => {
     isLight ? "☾" : "☼";
 });
 
-
-/* Custom cursor */
-
-window.addEventListener("mousemove", (event) => {
-
-  if (window.innerWidth <= 600) {
-    return;
-  }
-
-  cursor.style.left =
-    `${event.clientX}px`;
-
-  cursor.style.top =
-    `${event.clientY}px`;
-
-  cursorDot.style.left =
-    `${event.clientX}px`;
-
-  cursorDot.style.top =
-    `${event.clientY}px`;
-
-});
-
-
 /* Magnetic elements */
 
 magneticItems.forEach((item) => {
@@ -144,16 +117,12 @@ magneticItems.forEach((item) => {
     item.style.transform =
       `translate(${x * 0.18}px, ${y * 0.18}px)`;
 
-    cursor.classList.add("active");
-
   });
 
 
   item.addEventListener("mouseleave", () => {
 
     item.style.transform = "";
-
-    cursor.classList.remove("active");
 
   });
 

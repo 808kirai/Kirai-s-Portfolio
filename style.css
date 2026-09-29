@@ -123,12 +123,12 @@ button {
   z-index: 50;
 
   top: 0;
-  left: 50%;
+  left: 0;
 
-  transform: translateX(-50%);
-
-  width: min(1240px, calc(100% - 48px));
+  width: 100%;
   height: 76px;
+
+  padding: 0 clamp(24px, 5vw, 80px);
 
   display: flex;
   align-items: center;
@@ -269,10 +269,16 @@ button {
 
 .hero,
 .section {
-  width: min(1240px, calc(100% - 48px));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
+.hero-content,
+.section > * {
+  width: min(1240px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Hero */
 
@@ -1458,14 +1464,10 @@ button {
 /* Footer */
 
 footer {
-  width: min(
-    1240px,
-    calc(100% - 48px)
-  );
+  width: 100%;
+  margin: 0;
 
-  margin: 0 auto;
-
-  padding: 28px 0 35px;
+  padding: 28px clamp(24px, 5vw, 80px) 35px;
 
   border-top: 1px solid var(--line);
 
@@ -1675,19 +1677,27 @@ footer strong {
 
 @media (max-width: 600px) {
 
-  .navbar,
-  .hero,
-  .section,
-  footer {
-    width: calc(100% - 28px);
-  }
-
   .navbar {
+    width: 100%;
     height: 68px;
+    padding: 0 14px;
   }
 
   .mobile-nav {
     top: 68px;
+    padding: 16px 14px 24px;
+  }
+
+  .hero,
+  .section {
+    width: 100%;
+  }
+
+  .hero-content,
+  .section > * {
+    width: calc(100% - 28px);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero {
@@ -1695,17 +1705,11 @@ footer strong {
   }
 
   .hero h1 {
-    font-size:
-      clamp(
-        49px,
-        15vw,
-        80px
-      );
+    font-size: clamp(49px, 15vw, 80px);
   }
 
   .hero-actions {
     flex-direction: column;
-
     align-items: stretch;
   }
 
@@ -1723,7 +1727,6 @@ footer strong {
 
   .project-card {
     grid-template-columns: 1fr;
-
     gap: 15px;
   }
 
@@ -1732,7 +1735,6 @@ footer strong {
   .project-info,
   .project-arrow {
     grid-column: 1;
-
     grid-row: auto;
   }
 
@@ -1742,6 +1744,11 @@ footer strong {
 
   .project-visual {
     min-height: 210px;
+  }
+
+  .repo-grid,
+  .now-grid {
+    grid-template-columns: 1fr;
   }
 
   .social-grid {
@@ -1754,18 +1761,18 @@ footer strong {
 
   .skill-groups {
     grid-template-columns: 1fr 1fr;
-
     gap: 30px 20px;
   }
 
   .timeline-row {
     grid-template-columns: 1fr;
-
     gap: 9px;
   }
 
   footer {
+    width: 100%;
     grid-template-columns: 1fr auto;
+    padding: 28px 14px 35px;
   }
 
   footer p,
@@ -1801,4 +1808,11 @@ footer strong {
 
     transform: none;
   }
+}
+
+/* Hide custom cursor */
+
+.cursor,
+.cursor-dot {
+  display: none !important;
 }
