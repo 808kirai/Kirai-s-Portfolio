@@ -1,149 +1,443 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1B191A">
+  <meta name="description" content="Kirai — Software Engineer building practical AI systems and digital experiences.">
   <title>Kirai — Software Engineer</title>
-  <meta name="description" content="Kirai — AI developer and designer building interactive AI systems and digital experiences.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://cdn.simpleicons.org; connect-src 'self' https://api.github.com; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preconnect" href="https://cdn.simpleicons.org">
+  <link rel="preconnect" href="https://api.github.com">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
   <header class="navbar">
-    <a class="logo magnetic" href="#home">Kirai</a>
+    <a href="#home" class="logo magnetic">808kirai</a>
+
     <nav class="desktop-nav">
-      <a href="#home">Home</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="#socials">Socials</a>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="#socials">Socials</a>
     </nav>
-    <button class="theme-toggle magnetic" aria-label="Toggle theme"><span class="theme-icon">☼</span></button>
-    <button class="menu-button magnetic" aria-label="Open menu"><span></span><span></span></button>
+
+    <div class="nav-actions">
+      <button class="theme-toggle magnetic" type="button" aria-label="Toggle theme">
+        <span class="theme-icon">theme</span>
+      </button>
+
+      <button class="menu-button magnetic" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <nav class="mobile-nav">
-    <a href="#home">Home</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="#socials">Socials</a>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="#socials">Socials</a>
   </nav>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-glow"></div>
+    <section class="hero snap-section" id="home">
       <div class="hero-content fade">
-        <p class="eyebrow">SOFTWARE ENGINEER / AI / DESIGN</p>
-        <p class="hero-kicker">fail fast, learn faster</p>
-        <h1>AI models meet <span>human experience.</span></h1>
-        <p class="hero-subtitle">Forging practical AI tools for a digital-first world.</p>
-        <p class="hero-description">I build and perfect intuitive AI systems that turn complex machine learning into real-world solutions.</p>
-        <div class="hero-actions">
-          <a class="button primary magnetic" href="#projects">My Work <span>↗</span></a>
-          <a class="button magnetic" href="mailto:808kirai@gmail.com">Chat with Kirai <span>↗</span></a>
+        <div class="hero-topline">
+          <span class="eyebrow">SOFTWARE ENGINEER / AI / DESIGN</span>
+          <span class="availability">AVAILABLE FOR HIRE</span>
         </div>
-        <div class="hero-bottom"><span>Available for hire</span><span>Projects</span><span>Connecting</span><span>Nairobi, Kenya</span></div>
+
+        <p class="hero-kicker">fail fast, learn faster</p>
+
+        <h1>
+          AI models meet
+          <span>human experience.</span>
+        </h1>
+
+        <div class="hero-lower">
+          <div>
+            <p class="hero-subtitle">Forging practical AI tools for a digital-first world.</p>
+            <p class="hero-description">
+              I build and perfect intuitive AI systems that turn complex machine learning
+              into real-world solutions.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="button primary magnetic">My Work <span>open</span></a>
+            <a href="mailto:808kirai@gmail.com" class="button magnetic">Chat with Kirai <span>open</span></a>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>Nairobi, Kenya</span>
+          <span>AI / ML</span>
+          <span>Computer Vision</span>
+          <span>Interactive Systems</span>
+        </div>
       </div>
-      <div class="scroll-hint fade"><span>SCROLL TO EXPLORE</span><span>↓</span></div>
+
+      <a href="#about" class="scroll-hint fade magnetic">
+        <span>SCROLL TO EXPLORE</span>
+        <b>scroll</b>
+      </a>
     </section>
 
-    <section class="section intro">
-      <div class="section-label fade">01 / ABOUT</div>
-      <div class="intro-grid">
-        <h2 class="fade">Building, training and stress-testing <span>artificial intelligence.</span></h2>
-        <div class="intro-copy fade">
-          <p>I am a 19 year old AI developer and designer dedicated to building and stress-testing interactive systems, combining advanced machine learning with intuitive design to solve real-world problems.</p>
-          <p>I enjoy building interactive AI tools, simulations and bringing ideas to life.</p>
-          <div class="mini-facts">
-            <div><small>EDUCATION</small><strong>BSc Software Engineering</strong></div>
-            <div><small>LEARNING</small><strong>Machine Learning</strong></div>
-            <div><small>FOCUS</small><strong>Interactive AI Systems</strong></div>
+    <section class="intro section snap-section" id="about">
+      <div class="section-inner">
+        <div class="section-label fade">01 / ABOUT</div>
+
+        <div class="intro-grid">
+          <h2 class="fade">
+            Building, training and stress-testing
+            <span>artificial intelligence.</span>
+          </h2>
+
+          <div class="intro-copy fade">
+            <p>
+              I am a 19 year old AI developer and designer dedicated to building and
+              stress-testing interactive systems, combining advanced machine learning
+              with intuitive design to solve real-world problems.
+            </p>
+
+            <p>
+              I enjoy building interactive AI tools, simulations and bringing ideas to life.
+            </p>
+
+            <div class="mini-facts">
+              <div>
+                <small>EDUCATION</small>
+                <strong>BSc Software Engineering</strong>
+              </div>
+              <div>
+                <small>CURRENTLY LEARNING</small>
+                <strong>Machine Learning</strong>
+              </div>
+              <div>
+                <small>FOCUS</small>
+                <strong>Interactive AI Systems</strong>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="section-label fade">02 / SELECTED WORK</div>
-      <div class="section-heading fade">
-        <div><p class="eyebrow">PROJECTS</p><h2>Built to work<br>in the real world.</h2></div>
-        <a class="text-link magnetic" href="https://github.com/808kirai" target="_blank" rel="noreferrer">Open GitHub ↗</a>
-      </div>
+    <section class="projects section snap-section" id="projects">
+      <div class="section-inner">
+        <div class="section-label fade">02 / SELECTED WORK</div>
 
-      <div class="project-list">
-        <a class="project-card fade" href="https://github.com/808kirai/Celestial-Image-Identifier" target="_blank" rel="noreferrer">
-          <div class="project-number">01</div>
-          <div class="project-visual celestial"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit-dot"></div><div class="celestial-title">CELESTIAL<br>IDENTIFIER</div></div>
-          <div class="project-info"><div><p class="project-type">FULL-STACK / COMPUTER VISION</p><h3>Celestial Image Identifier</h3><p>A full-stack classical computer vision model designed to catalog space and sky targets in real time.</p></div><div class="project-meta"><span>Python</span><span>JavaScript</span><span>FastAPI</span><span>OpenCV</span><span>HTML / CSS</span></div></div>
-          <span class="project-arrow">↗</span>
-        </a>
+        <div class="section-heading fade">
+          <div>
+            <p class="eyebrow">PROJECTS</p>
+            <h2>Built to work<br>in the real world.</h2>
+          </div>
 
-        <a class="project-card fade" href="https://github.com/808kirai/Face-Tracking-Filter" target="_blank" rel="noreferrer">
-          <div class="project-number">02</div>
-          <div class="project-visual face"><div class="face-grid"></div><div class="face-box"><span></span><span></span><span></span><span></span></div><div class="face-cross">+</div></div>
-          <div class="project-info"><div><p class="project-type">PYTHON / COMPUTER VISION</p><h3>Face Tracking Filter</h3><p>A real-time interactive computer vision system using MediaPipe and OpenCV to track gestures, hands and face coordinates through a webcam.</p></div><div class="project-meta"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>APIs</span></div></div>
-          <span class="project-arrow">↗</span>
-        </a>
+          <a class="text-link magnetic" href="https://github.com/808kirai" target="_blank" rel="noopener noreferrer">
+            Open GitHub
+          </a>
+        </div>
 
-        <a class="project-card fade" href="https://github.com/808kirai/NeuSE" target="_blank" rel="noreferrer">
-          <div class="project-number">03</div>
-          <div class="project-visual nuse"><div class="nuse-ring ring-1"></div><div class="nuse-ring ring-2"></div><div class="nuse-ring ring-3"></div><div class="nuse-center">N</div><div class="nuse-scan"></div></div>
-          <div class="project-info"><div><p class="project-type">EDGE AI / DISASTER INTELLIGENCE</p><h3>NeuSE</h3><p>An offline edge-AI system designed for real-time disaster detection and intelligence during critical search and rescue operations without network connectivity.</p></div><div class="project-meta"><span>MindSpore</span><span>ModelArts</span><span>Atlas 200</span><span>Ascend</span><span>GaussDB</span></div></div>
-          <span class="project-arrow">↗</span>
-        </a>
-      </div>
-    </section>
+        <div class="project-list">
+          <a class="project-card fade" href="https://github.com/808kirai/Celestial-Image-Identifier" target="_blank" rel="noopener noreferrer">
+            <div class="project-number">01</div>
+            <div class="project-visual celestial">
+              <div class="orbit orbit-1"></div>
+              <div class="orbit orbit-2"></div>
+              <div class="orbit-dot"></div>
+              <div class="visual-caption">CELESTIAL<br>IDENTIFIER</div>
+            </div>
+            <div class="project-info">
+              <p class="project-type">FULL-STACK / COMPUTER VISION</p>
+              <h3>Celestial Image Identifier</h3>
+              <p>A full-stack classical computer vision model designed to catalog space and sky targets in real time.</p>
+              <div class="project-meta">
+                <span>Python</span><span>JavaScript</span><span>FastAPI</span><span>OpenCV</span><span>HTML / CSS</span>
+              </div>
+            </div>
+            <span class="project-arrow">open</span>
+          </a>
 
-    <section class="section github">
-      <div class="section-label fade">03 / GITHUB</div>
-      <div class="github-head fade"><div><p class="eyebrow">OPEN SOURCE / BUILD LOG</p><h2>What I'm building<br>on GitHub.</h2></div><a class="button magnetic" href="https://github.com/808kirai" target="_blank" rel="noreferrer">Visit GitHub ↗</a></div>
-      <div id="github-repos" class="repo-grid fade"><p class="repo-loading">Loading repositories...</p></div>
-    </section>
+          <a class="project-card fade" href="https://github.com/808kirai/Face-Tracking-Filter" target="_blank" rel="noopener noreferrer">
+            <div class="project-number">02</div>
+            <div class="project-visual face">
+              <div class="face-grid"></div>
+              <div class="face-box"><span></span><span></span><span></span><span></span></div>
+              <div class="face-cross">scan</div>
+            </div>
+            <div class="project-info">
+              <p class="project-type">PYTHON / COMPUTER VISION</p>
+              <h3>Face Tracking Filter</h3>
+              <p>A real-time interactive computer vision system using MediaPipe and OpenCV to track gestures, hands and face coordinates through a webcam.</p>
+              <div class="project-meta">
+                <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>APIs</span>
+              </div>
+            </div>
+            <span class="project-arrow">open</span>
+          </a>
 
-    <section class="section skills" id="skills">
-      <div class="section-label fade">04 / TOOLKIT</div>
-      <div class="skills-layout">
-        <div class="fade"><p class="eyebrow">SKILLS</p><h2>Tools for turning<br>ideas into systems.</h2></div>
-        <div class="skill-groups fade">
-          <div class="skill-group"><small>LANGUAGES</small><p>Python</p><p>C / C++</p><p>HTML</p><p>CSS</p><p>SQL</p></div>
-          <div class="skill-group"><small>FRAMEWORKS / AI</small><p>PyTorch</p><p>TensorFlow</p><p>React</p><p>OpenCV</p><p>MediaPipe</p></div>
-          <div class="skill-group"><small>TOOLS</small><p>VS Code</p><p>Git</p><p>GitHub</p><p>PyCharm</p><p>APIs</p></div>
-          <div class="skill-group"><small>SYSTEMS</small><p>System Design</p><p>Architecture</p><p>Machine Learning</p><p>Computer Vision</p></div>
+          <a class="project-card fade" href="https://github.com/808kirai/NeuSE" target="_blank" rel="noopener noreferrer">
+            <div class="project-number">03</div>
+            <div class="project-visual nuse">
+              <div class="nuse-ring ring-1"></div>
+              <div class="nuse-ring ring-2"></div>
+              <div class="nuse-ring ring-3"></div>
+              <div class="nuse-center">N</div>
+              <div class="nuse-scan"></div>
+            </div>
+            <div class="project-info">
+              <p class="project-type">EDGE AI / DISASTER INTELLIGENCE</p>
+              <h3>NeuSE</h3>
+              <p>An offline edge-AI system designed for real-time disaster detection and intelligence during critical search and rescue operations without network connectivity.</p>
+              <div class="project-meta">
+                <span>MindSpore</span><span>ModelArts</span><span>Atlas 200</span><span>Ascend</span><span>GaussDB</span>
+              </div>
+            </div>
+            <span class="project-arrow">open</span>
+          </a>
+        </div>
+
+        <div class="activity" id="github-activity-section">
+          <div class="activity-head fade">
+            <div>
+              <p class="eyebrow">GITHUB ACTIVITY</p>
+              <h3>Recent work in motion.</h3>
+            </div>
+
+            <span id="github-activity-status" class="activity-status">
+              loading
+            </span>
+          </div>
+
+          <div id="github-activity" class="activity-list fade">
+            <p class="activity-loading">
+              Loading recent public activity...
+            </p>
+          </div>
+
+          <p class="activity-note fade">
+            Showing recent public GitHub events. Full contribution history is available on my GitHub profile.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section now">
-      <div class="section-label fade">05 / NOW</div>
-      <div class="now-grid">
-        <div class="now-card active fade"><span>● CURRENTLY BUILDING</span><h3>NeuSE</h3><p>Offline edge-AI for real-time disaster detection and search &amp; rescue intelligence.</p><a href="https://github.com/808kirai/NeuSE" target="_blank" rel="noreferrer">Explore project ↗</a></div>
-        <div class="now-card fade"><span>◌ CURRENTLY LEARNING</span><h3>Machine Learning</h3><p>Deepening model building, training, evaluation and practical AI system design.</p></div>
-        <div class="now-card fade"><span>→ OPEN TO</span><h3>Work &amp; Collaboration</h3><p>Jobs, internships, freelance projects, networking and interesting technical challenges.</p></div>
+    <section class="github section snap-section">
+      <div class="section-inner">
+        <div class="section-label fade">03 / GITHUB</div>
+
+        <div class="github-head fade">
+          <div>
+            <p class="eyebrow">OPEN SOURCE / BUILD LOG</p>
+            <h2>What I'm building<br>on GitHub.</h2>
+          </div>
+          <a class="button magnetic" href="https://github.com/808kirai" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+        </div>
+
+        <div id="github-repos" class="repo-grid fade">
+          <div class="repo-loading">Loading repositories...</div>
+        </div>
       </div>
     </section>
 
-    <section class="section experience">
-      <div class="section-label fade">06 / EXPERIENCE &amp; EDUCATION</div>
-      <div class="timeline">
-        <div class="timeline-row fade"><span>NOW</span><div><h3>Independent AI Developer &amp; Designer</h3><p>Building and stress-testing interactive AI systems, computer vision projects and practical digital experiences.</p></div></div>
-        <div class="timeline-row fade"><span>EDUCATION</span><div><h3>Bachelor's in Software Engineering</h3><p>Currently pursuing a Bachelor's degree in Software Engineering.</p></div></div>
-        <div class="timeline-row fade"><span>CERTIFICATIONS</span><div><h3>Certification details can be added.</h3><p>This area is ready for your completed AI, software or cloud certifications.</p></div></div>
+    <section class="skills section snap-section" id="skills">
+      <div class="section-inner">
+        <div class="section-label fade">04 / TOOLKIT</div>
+
+        <div class="skills-layout">
+          <div class="fade">
+            <p class="eyebrow">SKILLS / LANGUAGES / FRAMEWORKS</p>
+            <h2>Tools for turning<br>ideas into systems.</h2>
+            <p class="skills-copy">A practical stack across software engineering, AI, computer vision and system design.</p>
+          </div>
+
+          <div class="tech-groups fade">
+            <div class="tech-group">
+              <small>LANGUAGES</small>
+              <div class="tech-grid">
+                <div class="tech"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy" decoding="async"><span>Python</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++" loading="lazy" decoding="async"><span>C / C++</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy" decoding="async"><span>HTML</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" loading="lazy" decoding="async"><span>CSS</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="SQL" loading="lazy" decoding="async"><span>SQL</span></div>
+              </div>
+            </div>
+
+            <div class="tech-group">
+              <small>FRAMEWORKS / AI</small>
+              <div class="tech-grid">
+                <div class="tech"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" loading="lazy" decoding="async"><span>PyTorch</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" loading="lazy" decoding="async"><span>TensorFlow</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" loading="lazy" decoding="async"><span>React</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/opencv/5C3EE8" alt="OpenCV" loading="lazy" decoding="async"><span>OpenCV</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/mediapipe/0097A7" alt="MediaPipe" loading="lazy" decoding="async"><span>MediaPipe</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" loading="lazy" decoding="async"><span>FastAPI</span></div>
+              </div>
+            </div>
+
+            <div class="tech-group">
+              <small>TOOLS</small>
+              <div class="tech-grid">
+                <div class="tech"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code" loading="lazy" decoding="async"><span>VS Code</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy" decoding="async"><span>Git</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" loading="lazy" decoding="async"><span>GitHub</span></div>
+                <div class="tech"><img src="https://cdn.simpleicons.org/pycharm/000000" alt="PyCharm" loading="lazy" decoding="async"><span>PyCharm</span></div>
+              </div>
+            </div>
+
+            <div class="system-skills">
+              <span>System Design</span>
+              <span>Architecture</span>
+              <span>APIs</span>
+              <span>Machine Learning</span>
+              <span>Computer Vision</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section socials" id="socials">
-      <div class="section-label fade">07 / SOCIALS</div>
-      <div class="social-heading fade"><p class="eyebrow">CONNECT</p><h2>Find me<br>outside the code.</h2></div>
-      <div class="social-grid fade">
-        <a class="social-card magnetic" href="https://github.com/808kirai" target="_blank" rel="noreferrer"><span>GitHub</span><small>@808kirai</small><b>↗</b></a>
-        <a class="social-card magnetic" href="https://www.linkedin.com/in/kirai-96677643/" target="_blank" rel="noreferrer"><span>LinkedIn</span><small>kirai</small><b>↗</b></a>
-        <a class="social-card magnetic" href="https://www.tiktok.com/@808kirai?lang=en-GB" target="_blank" rel="noreferrer"><span>TikTok</span><small>@808kirai</small><b>↗</b></a>
-        <a class="social-card magnetic" href="https://www.instagram.com/kirai808/" target="_blank" rel="noreferrer"><span>Instagram</span><small>@kirai808</small><b>↗</b></a>
+    <section class="now section snap-section">
+      <div class="section-inner">
+        <div class="section-label fade">05 / NOW</div>
+
+        <div class="now-grid">
+          <div class="now-card active fade">
+            <span>CURRENTLY BUILDING</span>
+            <h3>NeuSE</h3>
+            <p>Offline edge-AI for real-time disaster detection and search & rescue intelligence.</p>
+            <a href="https://github.com/808kirai/NeuSE" target="_blank" rel="noopener noreferrer">Explore project</a>
+          </div>
+
+          <div class="now-card fade">
+            <span>CURRENTLY LEARNING</span>
+            <h3>Machine Learning</h3>
+            <p>Deepening model building, training, evaluation and practical AI system design.</p>
+          </div>
+
+          <div class="now-card fade">
+            <span>OPEN TO</span>
+            <h3>Work & Collaboration</h3>
+            <p>Jobs, internships, freelance projects, networking and interesting technical challenges.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="contact-box fade">
-        <div><p class="eyebrow">LET'S TALK</p><h2>Fail fast,<br><span>build faster.</span></h2><p class="contact-copy">Have a project, opportunity or idea worth exploring? Send me an email.</p></div>
-        <a class="contact-email magnetic" href="mailto:808kirai@gmail.com">808kirai@gmail.com <span>↗</span></a>
+    <section class="experience section snap-section">
+      <div class="section-inner">
+        <div class="section-label fade">06 / EXPERIENCE & EDUCATION</div>
+
+        <div class="timeline">
+          <div class="timeline-row fade">
+            <span>NOW</span>
+            <div>
+              <h3>Independent AI Developer & Designer</h3>
+              <p>Building and stress-testing interactive AI systems, computer vision projects and practical digital experiences.</p>
+            </div>
+          </div>
+
+          <div class="timeline-row fade">
+            <span>EDUCATION</span>
+            <div>
+              <h3>Bachelor's in Software Engineering</h3>
+              <p>Currently pursuing a Bachelor's degree in Software Engineering.</p>
+            </div>
+          </div>
+
+          <div class="timeline-row fade">
+            <span>CERTIFICATIONS</span>
+            <div>
+              <h3>Certification space</h3>
+              <p>Add verified certifications here when you are ready. No placeholder credentials are being invented.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="socials section snap-section" id="socials">
+      <div class="section-inner">
+        <div class="section-label fade">07 / SOCIALS</div>
+
+        <div class="social-heading fade">
+          <p class="eyebrow">CONNECT</p>
+          <h2>Find me<br>outside the code.</h2>
+        </div>
+
+        <div class="social-grid fade">
+          <a href="https://github.com/808kirai" target="_blank" rel="noopener noreferrer" class="social-card magnetic">
+            <img src="https://cdn.simpleicons.org/github/FEFEFE" alt="GitHub" loading="lazy" decoding="async">
+            <span>GitHub</span>
+            <small>@808kirai</small>
+            <b>open</b>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kirai-96677643/" target="_blank" rel="noopener noreferrer" class="social-card magnetic">
+            <img src="https://cdn.simpleicons.org/linkedin/FEFEFE" alt="LinkedIn" loading="lazy" decoding="async">
+            <span>LinkedIn</span>
+            <small>kirai</small>
+            <b>open</b>
+          </a>
+
+          <a href="https://www.tiktok.com/@808kirai?lang=en-GB" target="_blank" rel="noopener noreferrer" class="social-card magnetic">
+            <img src="https://cdn.simpleicons.org/tiktok/FEFEFE" alt="TikTok" loading="lazy" decoding="async">
+            <span>TikTok</span>
+            <small>@808kirai</small>
+            <b>open</b>
+          </a>
+
+          <a href="https://www.instagram.com/kirai808/" target="_blank" rel="noopener noreferrer" class="social-card magnetic">
+            <img src="https://cdn.simpleicons.org/instagram/FEFEFE" alt="Instagram" loading="lazy" decoding="async">
+            <span>Instagram</span>
+            <small>@kirai808</small>
+            <b>open</b>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section snap-section" id="contact">
+      <div class="section-inner">
+        <div class="contact-box fade">
+          <div>
+            <p class="eyebrow">LET'S TALK</p>
+            <h2>Fail fast,<br><span>build faster.</span></h2>
+            <p class="contact-copy">Have a project, opportunity or idea worth exploring? Send me an email or start a WhatsApp chat.</p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:808kirai@gmail.com" class="contact-link magnetic">
+              <span>EMAIL</span>
+              <strong>808kirai@gmail.com</strong>
+              <b>open</b>
+            </a>
+
+            <a href="https://wa.me/254740060124?text=Hi%20Kirai%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" class="contact-link magnetic">
+              <span>WHATSAPP</span>
+              <strong>+254 740 060 124</strong>
+              <b>open</b>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer><div><strong>808kirai</strong><span>Good things fall apart so that better things fall in place.</span></div><span>© <span id="year"></span> Kirai</span><a class="back-top magnetic" href="#home">↑</a></footer>
+  <footer>
+    <div>
+      <strong>808kirai</strong>
+      <span>Good things fall apart so that better things fall in place.</span>
+    </div>
+    <span>© <span id="year"></span> Kirai</span>
+    <a href="#home" class="back-top magnetic">top</a>
+  </footer>
 
   <script src="script.js"></script>
 </body>
